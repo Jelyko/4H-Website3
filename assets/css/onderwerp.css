@@ -1,0 +1,41 @@
+/*intro afbeelding zetten*/
+#intro {
+    background-image: url("../IMG/intro/onderwerp.jpg");
+}
+
+/*afbeelding in het midden zetten*/
+#onderwerp {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#screenshot1 {
+    float: left;
+    display: block;
+	width: 32%;
+	height: auto;
+	cursor: pointer;
+}
+
+#screenshot2 {
+    display: block;
+	width: 32%;
+	height: auto;
+	cursor: pointer;
+}
+
+#screenshot3 {
+    display: block;
+	width: 32%;
+	height: auto;
+	cursor: pointer;
+}
+
+.blur {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+  }

@@ -1,0 +1,113 @@
+/*
+Stylesheed voor:
+Jaspers website
+*/
+
+/*variable voor hoogte van navigatie balk.*/
+:root {
+    --nav-height: 60px; /*ul#nav height = #intro  padding-top*/
+}
+
+/*zorgen dat het boven in het scherm begint, font-family en size zetten*/
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: "Trebuchet MS";
+
+    /*optioneel:*/
+    background-color: white;
+}
+
+/*Navigatie balk*/
+ul#nav {
+    list-style-type: none; /*bolletjes weg halen*/
+    margin: 0; /*geen margin en padding*/
+    padding: 0;
+    overflow: hidden; /*als de knoppen langer zijn dat weg halen. (hoefd geen precieze height voor de li *& a)*/
+    background-color: #333; /*kleur zetten, kan ook een background-image zijn als je dat zou willen*/
+    height: var(--nav-height); /*hoogte van de balk (komt van variable)*/
+    position: fixed; /*positie vastzetten zodat als je naar beneden scrollt de navigatie balk er blijft staan (zorgt er wel voor dat de #intro bovin in zit en daar moet je "padding: {height} doen zodat het onder de navbar begint)*/
+    width: 100%; /*lengte van de navigatie balk (100% van je scherm)*/
+}
+
+/*de knoppen aan de rechter kant zetten*/
+li#nav {
+    float: right;
+}
+
+/*knoppen navigatie:*/
+li#nav a#nav {
+    display: block; /*er een blok van maken*/
+    color: white; /*text kleur wit maken*/
+    text-align: center; /*text in het midden van de knop zetten*/
+    padding: 22px 20px; /*ruimte tussen de verschillende knoppen*/
+    text-decoration: none; /*decoratie weg halen (bijvoorbeeld de lijn eronder dat indiceert dat het een link is)*/
+    height: 60px; /*hoogte van de knop*/
+    font-size: 16px !important; /*groote van de text (!important is als de font-size voor html, body kleiner of groter is dat deze waarde hier dus blijft.*/
+}
+  
+/*voeg hover kleur toe*/
+li#nav a#nav:hover {
+    background-color: #b5b5b5; 
+}
+
+/*voeg een kleur toe voor het menu waarin je nu zit (html: de knop met class="active")*/
+.active {
+    background-color: #00bbff;
+}
+
+/*logo in het midden van de navigatie balk zetten en aan de linker kant (60px ruimte. -10px aan elke kant. 40px * 40px blijft over. Width & height in html)*/
+div#logo {
+    padding-left: 10px;
+    padding-top: 10px;
+    float: left;
+}
+
+/*logo rond maken*/
+img#logo {
+    border-radius: 50%;
+}
+
+/*footer 20px van de randen afzetten*/
+footer {
+    padding: 20px;
+}
+
+/*linker kant ((c) 2021 Jasper Demmers) aan de linker kant zetten*/
+#footer-links {
+    float: left;
+}
+
+/*rechter kant (Contact) aan de rechter kant zetten*/
+#footer-rechts {
+    float: right;
+}
+
+/*de afbeelding onder de navigatie balk*/
+#intro {
+    text-align: center; /*text in het midden zetten*/
+    height: 500px; /*hoogte van de afbeelding*/
+    background-repeat: no-repeat; /*achtergrond niet herhalen*/
+    background-size: cover; /*grote zo groot mogelijk dat past in de container*/
+    padding-top: var(--nav-height); /*Hoe ver die van de bovenkant af moet zijn*/
+}
+
+/*intro title*/
+#title {
+    padding-top: 0px; /*haal margin weg*/
+    margin-top: 200px; /*intro ongeveer in het midden zetten*/
+    font-size: 80px; /*grotere font size*/
+}
+
+/*class center, in het midden zetten*/
+.tablecenter {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article {
+    width: 100%;
+    height: max-content;
+    display: table;
+}

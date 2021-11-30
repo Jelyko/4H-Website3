@@ -1,0 +1,26 @@
+/*intro afbeelding zetten*/
+#intro {
+    background-image: url(../IMG/intro/index.jpg);
+}
+
+#links {
+    float: left;
+    height: 300px;
+    margin-top: 25px;
+    margin-left: 25%;
+}
+
+#rechts {
+    float: left;
+    margin-top: 25px;
+    margin-left: 75px;
+}
+
+h2 {
+    padding-left: 250px;
+}
+
+p {
+    max-width: 600px;
+    text-align: center;
+}

@@ -1,0 +1,48 @@
+/*intro afbeelding zetten*/
+#intro {
+    background-image: url(../IMG/intro/rekenmachine.jpg);
+}
+
+#title {
+    color: white;
+}
+
+#rekenmachine {
+    margin-left: 40%;
+    margin-top: 25px;
+}
+
+input[type="text"] {
+    border: 2px solid gray;
+    border-radius: 4px;
+    padding: 10px 10px;
+    width: 354px;
+    display: block;
+    margin-bottom: 10px;
+    background-color: #00bbff;
+}
+
+input[type="text"]:focus {
+    border: 3px solid #555;
+}
+
+input[type="button"] {
+    padding: 15px 25px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #00bbff;
+    border: none;
+    border-radius: 15px;
+}
+
+input[type="button"]:hover {
+    background-color: #0051ff;
+}
+
+input[type="button"]:active {
+    background-color: #3e8e41;
+    transform: translateY(2px);
+}

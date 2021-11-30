@@ -1,0 +1,12 @@
+/*intro afbeelding zetten*/
+#intro {
+    background-image: url("../IMG/intro/dagboek.jpg");
+}
+
+/*dagboek afbeelding in het midden zetten*/
+img#dagboek {
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
