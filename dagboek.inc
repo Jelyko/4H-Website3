@@ -1,0 +1,1 @@
+<img id="dagboek" src="assets/IMG/dagboek.jpg">
