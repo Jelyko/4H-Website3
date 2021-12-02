@@ -4,7 +4,35 @@
         <title>Jaspers site - Home</title>
         <link rel="icon" type="image/jpg" href="assets/IMG/favicon.ico">
         <link rel="stylesheet" href="assets/css/stylesheet.css" type="text/css">
-        <link rel="stylesheet" href="assets/css/index.css" type="text/css">
+        <?php
+        if(isset($_GET["page"])) {
+            $nummer = $_GET["page"];
+        } else {
+            $nummer = 1;
+        }
+
+        if ($nummer = 1) {
+            echo "<link rel='stylesheet' href='assets/css/index.css' type='text/css'>";
+        }
+        if ($nummer = 2) {
+            echo "<link rel='stylesheet' href='assets/css/overmij.css' type='text/css'>";
+        }
+        if ($nummer = 3) {
+            echo "<link rel='stylesheet' href='assets/css/opdrachten.css' type='text/css'>";
+        }
+        if ($nummer = 4) {
+            echo "<link rel='stylesheet' href='assets/css/dagboek.css' type='text/css'>";
+        }
+        if ($nummer = 5) {
+            echo "<link rel='stylesheet' href='assets/css/onderwerp.css' type='text/css'>";
+        }
+        if ($nummer = 6) {
+            echo "<link rel='stylesheet' href='assets/css/rekenmachine.css' type='text/css'>";
+        }
+        if ($nummer = 7) {
+            echo "<link rel='stylesheet' href='assets/css/bronnen.css' type='text/css'>";
+        }
+        ?>
     </HEAD>
     <BODY>
         <div id="container">
