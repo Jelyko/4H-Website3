@@ -4,6 +4,7 @@
         <title>Jaspers site - Home</title>
         <link rel="icon" type="image/jpg" href="assets/IMG/favicon.ico">
         <link rel="stylesheet" href="assets/css/stylesheet.css" type="text/css">
+        <script src='assets/js/spoiler.js'></script>
         <?php
         if(isset($_GET["page"])) {
             $nummer = $_GET["page"];
@@ -11,25 +12,26 @@
             $nummer = 1;
         }
 
-        if ($nummer = 1) {
+        if ($nummer == 1) {
             echo "<link rel='stylesheet' href='assets/css/index.css' type='text/css'>";
         }
-        if ($nummer = 2) {
+        if ($nummer == 2) {
             echo "<link rel='stylesheet' href='assets/css/overmij.css' type='text/css'>";
         }
-        if ($nummer = 3) {
+        if ($nummer == 3) {
             echo "<link rel='stylesheet' href='assets/css/opdrachten.css' type='text/css'>";
         }
-        if ($nummer = 4) {
+        if ($nummer == 4) {
             echo "<link rel='stylesheet' href='assets/css/dagboek.css' type='text/css'>";
         }
-        if ($nummer = 5) {
+        if ($nummer == 5) {
             echo "<link rel='stylesheet' href='assets/css/onderwerp.css' type='text/css'>";
         }
-        if ($nummer = 6) {
+        if ($nummer == 6) {
             echo "<link rel='stylesheet' href='assets/css/rekenmachine.css' type='text/css'>";
+            echo "<script src='assets/js/rekenmachine.js'></script>";
         }
-        if ($nummer = 7) {
+        if ($nummer == 7) {
             echo "<link rel='stylesheet' href='assets/css/bronnen.css' type='text/css'>";
         }
         ?>
