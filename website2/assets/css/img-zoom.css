@@ -1,0 +1,11 @@
+/*afbeelding in het midden zetten*/
+img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/*achtergrond kleur zwart zetten*/
+body {
+    background-color: black;
+}

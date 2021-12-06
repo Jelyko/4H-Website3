@@ -1,0 +1,22 @@
+/*intro afbeelding zetten*/
+#intro {
+    background-image: url(../IMG/intro/overmij.jpg);
+    background-position: center;
+}
+
+/*tabel 30px van de intro afbeelding zetten & een single border*/
+table {
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+
+/*minimale hooghe van th zetten*/
+th {
+    height: 40px;
+}
+
+/*ruimte tussen de border veranderen en text aan de linker kant zetten*/
+th, td {
+    padding: 15px;
+    text-align: left;
+}
