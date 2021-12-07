@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <HTML>
     <HEAD>
-        <title>Jaspers site - Home</title>
         <link rel="icon" type="image/jpg" href="assets/IMG/favicon.ico">
         <link rel="stylesheet" href="assets/css/stylesheet.css" type="text/css">
         <script src='assets/js/spoiler.js'></script>
@@ -14,25 +13,32 @@
 
         if ($nummer == 1) {
             echo "<link rel='stylesheet' href='assets/css/index.css' type='text/css'>";
+            echo "<title>Jaspers site - Home</title>";
         }
         if ($nummer == 2) {
             echo "<link rel='stylesheet' href='assets/css/overmij.css' type='text/css'>";
+            echo "<title>Jaspers site - Overmij</title>";
         }
         if ($nummer == 3) {
             echo "<link rel='stylesheet' href='assets/css/opdrachten.css' type='text/css'>";
+            echo "<title>Jaspers site - Opdrachten</title>";
         }
         if ($nummer == 4) {
             echo "<link rel='stylesheet' href='assets/css/dagboek.css' type='text/css'>";
+            echo "<title>Jaspers site - Dagboek</title>";
         }
         if ($nummer == 5) {
             echo "<link rel='stylesheet' href='assets/css/onderwerp.css' type='text/css'>";
+            echo "<title>Jaspers site - Onderwerp</title>";
         }
         if ($nummer == 6) {
             echo "<link rel='stylesheet' href='assets/css/rekenmachine.css' type='text/css'>";
             echo "<script src='assets/js/rekenmachine.js'></script>";
+            echo "<title>Jaspers site - Rekenmachine</title>";
         }
         if ($nummer == 7) {
             echo "<link rel='stylesheet' href='assets/css/bronnen.css' type='text/css'>";
+            echo "<title>Jaspers site - Bronnen</title>";
         }
         ?>
     </HEAD>
