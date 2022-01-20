@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+    </head>
+    <body>
+        <pre><code class="language-css">to bricks
+	PU
+	SETPOS :HOUSE
+	FD 20
+	SETPENCOLOR [126 130 116]
+	PD
+	repeat 7 [FD 5 LT 90 FD 10 RT 90 FD 5 RT 90 FD 10 LT 90]
+	PU
+	SETPOS :HOUSE
+	FD 20
+	LT 90
+	FD 5
+	RT 90
+	PD
+	repeat 7 [FD 5 LT 90 FD 10 RT 90 FD 5 RT 90 FD 10 LT 90]
+	PU
+	SETPOS :HOUSE
+	FD 20
+	LT 90
+	FD 10
+	RT 90
+	PD
+	repeat 7 [FD 5 LT 90 FD 10 RT 90 FD 5 RT 90 FD 10 LT 90]
+	PU
+	SETPOS :HOUSE
+	FD 20
+	LT 90
+	FD 15
+	RT 90
+	PD
+	repeat 7 [FD 5 LT 90 FD 10 RT 90 FD 5 RT 90 FD 10 LT 90]
+	PU
+	SETPOS :HOUSE
+	FD 20
+	LT 90
+	FD 20
+	RT 90
+	PD
+	repeat 7 [FD 5 LT 90 FD 10 RT 90 FD 5 RT 90 FD 10 LT 90]
+	PU
+	LT 90
+	FD 10
+	LT 90
+	SETPENCOLOR [255 255 255]
+	PD
+	FD 70
+	PU
+	RT 90
+	FD 190
+	RT 90
+	LOCALMAKE "brick2 pos
+	SETPENCOLOR [126 130 116]
+	PD
+	repeat 7 [FD 5 LT 90 FD 10 RT 90 FD 5 RT 90 FD 10 LT 90]
+	PU
+	SETPOS :brick2
+	LT 90
+	FD 5
+	RT 90
+	PD
+	repeat 7 [FD 5 LT 90 FD 10 RT 90 FD 5 RT 90 FD 10 LT 90]
+	PU
+	SETPOS :brick2
+	LT 90
+	FD 10
+	RT 90
+	PD
+	repeat 7 [FD 5 LT 90 FD 10 RT 90 FD 5 RT 90 FD 10 LT 90]
+	PU
+	SETPOS :brick2
+	LT 90
+	FD 15
+	RT 90
+	PD
+	repeat 7 [FD 5 LT 90 FD 10 RT 90 FD 5 RT 90 FD 10 LT 90]
+	PU
+	SETPOS :brick2
+	LT 90
+	FD 20
+	RT 90
+	PD
+	FD 70
+	PU
+	LT 90
+	FD 5
+	LT 90
+	PD
+	FD 70
+	PU
+	RT 90
+	FD 5
+	RT 90
+	PD
+	repeat 7 [FD 5 RT 90 FD 5 LT 90 FD 5 LT 90 FD 5 RT 90] 
+	SETPENCOLOR [0 0 0]
+	RT 180
+	FD 70
+	PU
+	LT 90
+	FD 30
+	LT 90
+	SETPENCOLOR [255 255 255]
+	PD
+	FD 70
+	PU
+	SETPENCOLOR [0 0 0]
+	SETPOS :HOUSE
+	PD
+	FD 200
+end
+
+to bushes
+	PU
+	SETPOS :START
+	RT 30
+	FD 190
+	LT 120
+	FD 170
+
+	SETFLOODCOLOR [16 59 29]
+	SETPENCOLOR [0 0 0]
+	PD
+	CIRCLE 16
+	FILL
+	PU
+	FD 20
+	PD
+	CIRCLE 12
+	FILL
+	PU
+	FD 20
+	PD
+	CIRCLE 10
+	FILL
+	PU
+	FD 20
+	PD
+	CIRCLE 20
+	FILL
+	PU
+	FD 20
+	PD
+	CIRCLE 13
+	FILL
+	PU
+	FD 20
+	PD
+	CIRCLE 19
+	FILL
+	PU
+	FD 20
+	PD
+	CIRCLE 15
+	FILL
+	PU
+	FD 20
+	PD
+	CIRCLE 17
+	FILL
+	PU
+	FD 20
+	PD
+	CIRCLE 15
+	FILL
+	PU
+	FD 20
+	PD
+	CIRCLE 12
+	FILL
+	PU
+	FD 20
+	PD
+	CIRCLE 17
+	FILL
+	PU
+	FD 20
+	PD
+	CIRCLE 16
+	FILL
+	PU
+	FD 13
+	FILL
+	RT 90
+	FD 9
+	RT 90
+	FD 15
+	FILL
+	FD 7
+	FILL
+	FD 5
+	FILL
+	FD 25
+	FILL
+	FD 20
+	FILL
+	FD 9
+	FILL
+	FD 10
+	FILL
+	FD 20
+	FILL
+	FD 20
+	FILL
+	FD 16
+	FILL
+	FD 6
+	FILL
+	FD 6
+	FILL
+	FD 10
+	FILL
+	FD 45
+	FILL
+	FD 20
+	FILL
+	RT 180
+	FD 114
+	FILL
+	FD 15
+	FILL
+	RT 180
+	FD 40
+	RT 90
+	FD 10
+	FILL
+	LT 90
+	FD 8
+	RT 90
+	FD 7
+	FILL
+	RT 180
+	FD 14
+	FILL
+end
+
+to car
+	SETPENCOLOR [0 0 0]
+	PU
+	SETPOS :START
+	FD 50
+	LT 90
+	FD 25
+	RT 90
+	PD
+	CIRCLE 10
+	PU
+	LT 90
+	FD 12
+	PD
+	FD 60
+	PU
+	FD 12
+	PD
+	CIRCLE 10
+	PU
+	FD 12
+	PD
+	FD 20
+	RT 90
+	FD 20
+	RT 90
+	FD 34
+	LOCALMAKE "CWINDOW pos
+	LT 60
+	FD 20
+	RT 60
+	FD 50
+	RT 30
+	FD 40
+	LT 30
+	FD 10
+	RT 90
+	FD 17
+	RT 90
+	FD 10
+	RT 90
+	FD 12
+	LT 90
+	FD 25
+	LT 90
+	FD 12
+	RT 90
+	PU
+	FD 60
+	RT 90
+	PD 
+	FD 12
+	LT 90
+	FD 24
+	LT 90
+	FD 12
+	PU
+	RT 90
+	FD 5
+	RT 90
+	FD 5
+	SETFLOODCOLOR [122 35 30]
+	FILL
+	RT 90
+	SETPOS :CWINDOW
+	FD 3
+	LT 60
+	PD
+	FD 17
+	RT 60
+	FD 25
+	RT 90
+	FD 15
+	RT 90
+	FD 33
+
+	SETFLOODCOLOR [122 204 184]
+	PU
+	RT 180
+	FD 10
+	LT 90
+	FD 5
+	FILL
+	LT 90
+	FD 15
+	LT 90
+	FD 25
+	SETFLOODCOLOR [28 5 6]
+	FILL
+	LT 90
+	FD 80
+	FILL
+	LT 90
+end
+
+to chimney
+	SETPOS :HOUSE
+	LT 90
+	FD 300
+	
+	LT 90
+	FD 175
+	RT 90
+	PD
+	SETPENCOLOR [105 105 105]
+	FD 10
+	LT 90
+	FD 5
+	LT 90
+	FD 10
+	LT 90
+	FD 2.5
+	LT 90
+	FD 5
+	SETFLOODCOLOR [105 105 105]
+	FILL
+end
+
+to frame
+	RT 30
+	FD 200
+
+	LT 120
+	FD 150
+
+	RT 90
+	SETPENCOLOR [0 0 0]
+	SETFLOODCOLOR [241 238 230]
+	PD
+	FD 200
+	LT 90
+
+	FD 250
+	LT 90
+
+	FD 200
+	LT 90
+	FD 250
+
+	MAKE "HOUSE pos
+	PU
+	LT 120
+	FD 50
+	RT 30
+	FILL
+	SETPOS :HOUSE
+
+	FD 200
+	RT 90
+	PD
+	FD 10
+	LT 90
+	FD 100
+	LT 90
+	FD 270
+	LT 90
+	FD 100
+	LT 90
+	FD 10
+
+	PU
+	LT 90
+	FD 5
+	SETFLOODCOLOR [157 96 85]
+	FILL
+	
+	SETPOS :HOUSE
+
+	FD 20
+	LT 90
+	SETPENCOLOR [157 96 85]
+	PD
+	FD 250
+	RT 90
+	FD 70
+	RT 90
+	FD 250
+	RT 90
+	FD 70
+	
+	PU
+	RT 120
+	FD 5
+	SETFLOODCOLOR [157 96 85]
+	FILL
+
+	RT 60
+	SETPOS :HOUSE
+end
+
+to garage
+	PU
+	SETPOS :START
+	RT 30
+	FD 200
+	LT 30
+	LOCALMAKE "GARAGE pos
+	SETPENCOLOR [0 0 0]
+	PD
+	repeat 2 [FD 100 LT 90 FD 150 LT 90]
+	FD 100
+	repeat 2 [FD 10 LT 90 FD 150	LT 90]
+	
+	PU
+	FD 5
+	LT 90
+	FD 5
+	SETFLOODCOLOR [255 255 255]
+	FILL
+	RT 90
+	
+	SETPOS :GARAGE
+	FD 5
+	LT 90
+	FD 5
+	SETFLOODCOLOR [138 80 36]
+	FILL
+	RT 90
+
+	SETPOS :GARAGE
+	LT 90
+	FD 10
+	RT 90
+	PD
+	FD 80
+	LT 90
+	FD 135
+	LT 90
+	FD 80
+	LT 90
+	PU
+	FD 20
+	LT 90
+	PD
+	FD 80
+	RT 90
+	FD 50
+	RT 90
+	FD 80
+	PU
+
+	RT 180
+	FD 35
+	SETPENCOLOR [155 161 171]
+	PD
+	FD 10
+	LT 90
+	FD 2
+	LT 90
+	FD 2
+	RT 90
+	FD 3
+	LT 90
+	FD 2
+	LT 90
+	FD 3
+	RT 90
+	FD 7
+	LT 90
+	FD 2
+	PU
+	LT 90
+	FD 2
+	LT 90
+	FD 1
+	SETFLOODCOLOR [155 161 171]
+	FILL
+
+	RT 90
+	
+end
+
+to oprit
+	SETPENCOLOR [255 218 185]
+	SETFLOODCOLOR [255 218 185]
+	
+	RT 30
+	FD 200
+
+	LT 120
+	FD 400
+
+	LT 60
+	FD 200
+
+	LT 120
+	FD 400
+
+	LT 90
+	FD 5
+
+	FILL
+end
+
+to tekening
+	;filename=huis.LGO
+	PU
+	HOME
+	RT 180
+	FD 300
+	RT 180
+	MAKE "START pos
+	PD
+	oprit
+	PU
+	SETPOS :START
+	PD
+	frame
+	windows
+	chimney
+
+	bricks
+
+	PU
+	SETPOS :START
+	FD 50
+	LT 90
+	FD 300
+	RT 90
+	trees 20
+	LT 90
+	FD 90
+	RT 90
+	FD 70
+	RT 180
+	trees 15
+	RT 180
+
+	garage
+	car
+	bushes
+end
+
+to trees :diameter
+	LOCALMAKE "TREE pos
+	SETPENCOLOR [164 116 74]
+	PD
+	repeat 2 [FD 50 RT 90 FD 5 RT 90]
+	PU
+	RT 20
+	FD 3
+	SETFLOODCOLOR [164 116 74]
+	FILL
+	LT 20
+	SETPOS :TREE
+	RT 90
+	FD 2.5
+	LT 90
+	FD 50
+	PD
+	SETPENCOLOR [0 101 0]
+	CIRCLE 10 + RANDOM :diameter
+	SETFLOODCOLOR [0 100 0]
+	PU
+	FD 5
+	FILL
+	RT 180
+	FD 10
+	FILL
+end
+
+to windows
+	PU
+	SETPOS :HOUSE
+	FD 20
+	LT 90
+	FD 30
+	
+	SETPENCOLOR [255 255 255]
+	PD
+	FD 190
+	RT 90
+	FD 70
+	RT 90
+	FD 190
+	RT 90
+	FD 70
+	
+	PU
+	RT 180
+	FD 60
+	LT 90
+	
+	PD
+	FD 190
+	
+	PU
+	LT 210
+	FD 5
+	
+	SETFLOODCOLOR [255 255 255]
+	FILL
+
+	RT 90
+	FD 5
+
+	SETFLOODCOLOR [210 232 223]
+	FILL
+	LT 150
+	SETPOS :HOUSE
+
+	PU
+	FD 130
+	LT 90
+	FD 30
+
+	PD
+	FD 190
+	RT 90
+	FD 60
+	RT 90
+	FD 190
+	RT 90
+	FD 60
+
+	LOCALMAKE "WINDOW pos
+
+	PU
+	RT 90
+	FD 43.75
+	RT 90
+	
+	PD
+	FD 60
+	LT 90
+	FD 5
+	LT 90
+	FD 60
+	
+	PU
+	LT 175
+	FD 5
+	SETFLOODCOLOR [255 255 255]
+	FILL
+
+	LT 185
+	FD 5
+	
+	RT 90
+	FD 38.75
+
+	RT 90
+	PD
+	FD 60
+	LT 90
+	FD 5
+	LT 90
+	FD 60
+
+	PU
+	LT 170
+	FD 5
+	FILL
+
+	LT 190
+	FD 5
+	
+	RT 90
+	FD 38.75
+
+	RT 90
+	
+	PD
+	FD 60
+	LT 90
+	FD 5
+	LT 90
+	FD 60
+	
+	PU
+	LT 170
+	FD 5
+	FILL
+	LT 10
+
+	LT 10
+	FD 20
+	SETFLOODCOLOR [210 232 223]
+	FILL
+	LT 180
+	FD 20
+	RT 10
+
+	LT 90
+
+	FD 20
+	FILL
+
+	FD 50
+	FILL
+	
+	FD 30
+	FILL
+
+	LT 90
+	SETPOS :WINDOW
+	FD 50
+
+	LT 90
+	
+	PD
+	FD 190
+
+	PU
+	RT 90
+	FD 5
+	RT 90
+	FD 10
+
+	SETFLOODCOLOR [255 255 255]
+	FILL
+	FD 60
+	FILL
+	FD 60
+	FILL
+	FD 30
+	FILL
+
+	SETPOS :WINDOW
+	LT 90
+	FD 90
+	LT 90
+	FD 40
+
+	PD
+	RT 90
+	FD 40
+	RT 90
+	FD 5
+	LT 90
+	FD 10
+	LT 90
+	FD 110
+	LT 90
+	FD 10
+	LT 90
+	FD 5
+	RT 90
+	FD 40
+
+	LT 90
+	FD 100
+
+	LOCALMAKE "TOPWINDOW pos
+
+	PU
+	LT 90
+	FD 40
+	LT 90
+	PD
+	FD 100
+	
+	PU
+	RT 90
+	FD 5
+	FILL
+
+	RT 90
+	FD 52.5
+	RT 90
+	PD
+	FD 45
+	LT 90
+	FD 5
+	LT 90
+	FD 45
+	PU
+	LT 90
+	FD 2.5
+	LT 90
+	FD 30
+	FILL
+
+	RT 90
+	FD 10
+	SETFLOODCOLOR [210 232 223]
+	FILL
+	RT 180
+	FD 30
+	FILL
+end
+
+Make "house [-50 -126.794919]
+Make "start [0 -300]
+      </pre>
+    </body>
+</html>

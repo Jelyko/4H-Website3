@@ -2,7 +2,8 @@ version: '3'
 
 services:
   4h-website:
-    image: 4h-website
+    #image: registry.jelyko.com/4h-website:latest
+    build: .
     container_name: 4h-website
     restart: unless-stopped
     ports:

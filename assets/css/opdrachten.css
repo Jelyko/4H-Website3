@@ -11,8 +11,24 @@
     margin-left: 25%;
 }
 
-#rechts {
+#lgo {
     float: left;
-    padding-top: 25px;
-    padding-left: 50px;
+    margin-top: 25px;
+    margin-left: 25%;
+}
+
+#lgo-afbeelding {
+    height: 20%;
+    width: 20%;
+}
+
+#lgo-schets {
+    transform: rotate(90deg);
+    height: 20%;
+    width: 20%;
+}
+
+#lgo-output {
+    height: 20%;
+    width: 20%;
 }
